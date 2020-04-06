@@ -1,0 +1,12 @@
+digraph G {
+ node[shape = box];nodo3[label = " 3. a"];
+nodo3-> nodo4;
+nodo4[label = " 4. h"];
+nodo4-> nodo5;
+nodo4-> nodo3;
+nodo5[label = " 5. o"];
+nodo5-> nodo6;
+nodo5-> nodo4;
+nodo6[label = " 6. l"];
+nodo6-> nodo5;
+}

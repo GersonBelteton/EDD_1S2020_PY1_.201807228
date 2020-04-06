@@ -1,0 +1,43 @@
+digraph G { 
+  node [shape=box]
+ nodoINV[label = "inv" width = 1.5 style = invis];nodon1n1[label = "Raiz" width = 1.5 style = filled, fillcolor = lightskyblue];
+nodon1n1-> nodon10[dir = both];
+nodo0n1[label = "c0" width = 1.5 style = filled, fillcolor = lightskyblue];
+nodo0n1-> nodon1n1[constraint=false, dir = both];
+nodo0n1-> nodo00[dir = both];
+nodo1n1[label = "c1" width = 1.5 style = filled, fillcolor = lightskyblue];
+nodo1n1-> nodo0n1[constraint=false, dir = both];
+nodo1n1-> nodo10[dir = both];
+nodo2n1[label = "c2" width = 1.5 style = filled, fillcolor = lightskyblue];
+nodo2n1-> nodo1n1[constraint=false, dir = both];
+nodo2n1-> nodo20[dir = both];
+nodo3n1[label = "c3" width = 1.5 style = filled, fillcolor = lightskyblue];
+nodo3n1-> nodo2n1[constraint=false, dir = both];
+nodo3n1-> nodo30[dir = both];
+nodon10[label = "f0" width = 1.5 style = filled, fillcolor = lightskyblue];
+nodo00[label = "h" width = 1.5 style = filled, fillcolor = lightskyblue];
+nodo00-> nodon10[constraint=false, dir = both];
+nodo10[label = "o" width = 1.5 style = filled, fillcolor = lightskyblue];
+nodo10-> nodo00[constraint=false, dir = both];
+nodo20[label = "l" width = 1.5 style = filled, fillcolor = lightskyblue];
+nodo20-> nodo10[constraint=false, dir = both];
+nodo30[label = "a" width = 1.5 style = filled, fillcolor = lightskyblue];
+nodo30-> nodo20[constraint=false, dir = both];
+nodoINVn1[label = "inv", width = 1.5, style = invis];
+nodon10-> nodoINVn1[style = invis];
+nodoINV0[label = "inv", width = 1.5, style = invis];
+nodo00-> nodoINV0[style = invis];
+nodoINV1[label = "inv", width = 1.5, style = invis];
+nodo10-> nodoINV1[style = invis];
+nodoINV2[label = "inv", width = 1.5, style = invis];
+nodo20-> nodoINV2[style = invis];
+nodoINV3[label = "inv", width = 1.5, style = invis];
+nodo30-> nodoINV3[style = invis];
+nodoINV0-> nodoINVn1[style = invis, constraint = false, dir = both ];
+nodoINV1-> nodoINV0[style = invis, constraint = false, dir = both ];
+nodoINV2-> nodoINV1[style = invis, constraint = false, dir = both ];
+nodoINV3-> nodoINV2[style = invis, constraint = false, dir = both ];
+{ rank = same; nodon1n1;nodo0n1;nodo1n1;nodo2n1;nodo3n1;}
+{ rank = same; nodon10;nodo00;nodo10;nodo20;nodo30;}
+{ rank = same; nodoINVn1;nodoINV0;nodoINV1;nodoINV2;nodoINV3;}
+}

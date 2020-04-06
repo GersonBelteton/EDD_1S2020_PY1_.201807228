@@ -1,0 +1,11 @@
+digraph G {
+ node[shape = box];nodo0[label = " jorge"];
+nodo1[label = " alejandro"];
+nodo2[label = " raul"];
+nodo3[label = " pedro"];
+nodo4[label = " juan"];
+nodo0->nodo1;
+nodo1->nodo2;
+nodo2->nodo3;
+nodo3->nodo4;
+}

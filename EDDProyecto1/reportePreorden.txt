@@ -1,0 +1,5 @@
+digraph G {
+ node[shape = box];nodo0[label = " juan"];
+nodo1[label = " pedro"];
+nodo0->nodo1;
+}

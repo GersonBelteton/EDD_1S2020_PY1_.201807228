@@ -1,0 +1,6 @@
+digraph G {
+ nodojuan[label = " juan"];
+nodopedro[label = " pedro"];
+nodojuan->nodopedro;
+nodopedro[label = " pedro"];
+}
